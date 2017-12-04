@@ -41,12 +41,14 @@ gulp.task('CSS', function() {
 
 
 gulp.task('watch_CSS', ['browser'], function() {
-    gulp.watch('*.scss', ['CSS'])
+    gulp.watch('*.scss', ['CSS']);
+    gulp.watch('*.scss').on('change', browserSync.reload)
 });
 
 
-gulp.task('watch_imageMIN', function() {
-    gulp.watch('*.{png,jpg,jpeg,svg}', ['imageMIN'])
+gulp.task('watch_imageMIN', ['browser'], function() {
+    gulp.watch('*.{png,jpg,jpeg,svg}', ['imageMIN']);
+    gulp.watch('*.{png,jpg,jpeg,svg}').on('change', browserSync.reload)
 });
 
 gulp.task('default', ['CSS', 'watch_CSS']);

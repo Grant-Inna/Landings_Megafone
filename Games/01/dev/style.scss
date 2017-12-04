@@ -1,28 +1,27 @@
+$back-body:  url('bg.png') center no-repeat; $back-size-body: cover;
 
-$back-body:  url('bg.png') bottom no-repeat; $back-size-body: cover;
-
-$back-header-logo: url('logo.png') left bottom no-repeat;
-$back-header: rgb(20, 20, 20); $back-size-header: 100% 100%;
+$back-header-logo: transparent;/*url('logo.png') left bottom no-repeat;*/
+$back-header: rgba(41, 32, 32, .96); $back-size-header: 100% 100%;
 $box-sh-header: none;
 $height-header: auto;
 
-$back-head-info: rgb(20, 20, 20);
-$color-age: rgb(127, 127, 127);
+$back-head-info: rgba(41, 32, 32, .96);
+$color-age: rgb(154, 140, 140);
 
 $back-age: url('18.png') center no-repeat; $back-size-age: contain;
 
-$back-button: rgb(255, 145, 0);/*url('back-button.png') bottom no-repeat;*/ $back-size-button: 100% 100%;
+$back-button: rgb(240, 141, 70);/*url('back-button.png') bottom no-repeat;*/ $back-size-button: 100% 100%;
 $box-sh-button: none;
 $back-button-icon: url('button-icon.png') center no-repeat;
 $color-button: rgb(255, 255, 255);
 $width-button: 95%;
 $height-button: 30%;
 $margin-bottom-button: 15px;
-$border-r-button: 4px;
+$border-r-button: 40px;
 $font-size-button: 2.4rem;
 $font-width-button: 600;
 
-$border-r-cancel: 1px;
+$border-r-cancel: 20px;
 
 
 $back-size-main: 100% 100%;
@@ -31,11 +30,11 @@ $height-main: 240px;
 $width-main: 94%;
 $padding-top-main: 0;
 
-$back-footer: rgb(3, 3, 3);
-$color-footer: rgb(117, 117, 117);
+$back-footer: rgba(41, 32, 32, .98);
+$color-footer: rgb(154, 140, 140);
 
-$back-cancel: rgb(93, 93, 93);
-$color-cancel: rgb(211, 212, 214);
+$back-cancel: rgba(41, 32, 32, .96);
+$color-cancel: rgb(154, 140, 140);
 
 
 $back-text: transparent; /*url('back-text.png') center no-repeat;*/
@@ -55,7 +54,7 @@ $color-menu-item-special: rgb(255, 255, 255);
 $back-form: transparent;
 
 $back-menu: transparent;/*url('menu.png') center no-repeat;*/ $back-size-head-menu: contain;
-$back-notice: url('back-notice.png') center no-repeat;
+$back-notice: transparent;/*url('back-notice.png') center no-repeat;*/
 
 $back-v-top: url('v-top.png') center no-repeat;
 $back-v-middle: transparent; /* /*url('v-middle.png') center no-repeat;*/
@@ -84,8 +83,8 @@ $padding-menu-icon: 0;
 
 $top-v-top:          32%;
 $bottom-v-top:       auto;
-$height-v-top:       40px;
-$width-v-top:        92%;
+$height-v-top:       80px;
+$width-v-top:        15%;
 $left-v-top:         (100% - $width-v-top) / 2;
 $right-v-top:        $left-v-top;
 
@@ -764,11 +763,6 @@ a {
 }
 .headInfo__text {
     color:  $color-age;
-    font-size: 1.1rem;
-    font-weight: 400;
-    transform: scaleX(.93) scaleY(.7);
-    line-height: 12px;
-    text-align: center;
 }
 
 .header__inner {
@@ -782,6 +776,15 @@ a {
 
     background: $back-header;
     background-size: $back-size-header;
+}
+
+.info__text {
+    font-family: Arial !important;
+    font-size: 1.1rem;
+    font-weight: 400;
+    transform: scaleX(.93) scaleY(.7);
+    line-height: 12px;
+    text-align: center;
 }
 
 
@@ -879,6 +882,7 @@ a {
 
 .button__submit {
     width:   $width-button;
+    max-width: 340px;
     height: $height-button;
     border: none;
     outline: none;
@@ -893,7 +897,7 @@ a {
     cursor: pointer;
     transition: .3s ease-in-out;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding: 10px 20%;
     margin-bottom: $margin-bottom-button;
@@ -915,7 +919,7 @@ a {
     padding: 3px 8px;
 }*/
 
-.button__cancel { width: 100px; padding: 7px 3px; background-color: $back-cancel; color: $color-cancel; text-decoration: none; text-align: center; font-size: 20px;/* font-stretch: condensed;*/ font-variant: all-small-caps; border: none; border-radius: $border-r-cancel; transform: scaleX(0.93) scaleY(0.7)}
+.button__cancel { width: 100px; padding: 9px 3px; background-color: $back-cancel; color: $color-cancel; text-decoration: none; text-align: center; font-size: 20px;/* font-stretch: condensed;*/ font-variant: all-small-caps; border: none; border-radius: $border-r-cancel; transform: scaleX(0.93) scaleY(0.7)}
 
 
 .button__icon { width: 35px; height: 25px; background: $back-button-icon; background-size: contain; }
@@ -930,43 +934,33 @@ a {
 }
 
 .footer__inner {
-    text-align: center;
     color:  $color-footer;
-    font-size: 1.3rem;
-    font-weight: 400;
-    font-stretch: condensed;
-    line-height: 100%;
-    transform: scaleX(.95) scaleY(.75)
 }
 
 
-.info__text { font-family:Arial !important;font-size:10px !important; color: $color-footer}
-
 @media (orientation: landscape) {
     .lbody {
-        background-position: center 85%;
+        background-position: center 30%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
     .loupe { margin-bottom: 0 }
     .top-menu-holder { display: none }
-    .main { justify-content: center; background: transparent; height: 150px; margin-bottom: 0; margin-top: 35px; }
+    .main { justify-content: center; background: transparent; height: 120px; margin-bottom: 0; margin-top: 35px; }
     .button__wrapper { justify-content: flex-start; margin-top: 3%;}
-    .video-middle, .video-pre-bottom, .video-top { display: none }
+    .video-middle, .video-pre-bottom { display: none }
     .video-bottom, .video-middle { display: block; top: 40px; height: 90% }
-    .footer__inner {
-        line-height: 1;
-    }
 
     .wrapper__btn { height: 60px; margin-top: 0; margin-bottom: 0 }
     .button__submit {  justify-content: center; height: 100%; /*min-height: 70px*/ }
     .button__icon { margin-left: 4% }
     .header { height: 85px }
     .header__logo { height: 70%; width: 25%; } .header__icons { width: 75%; }
-    .button__cancel { margin-top: 30px; }
+    .button__cancel { }
 
-    .video-top {  }
+    .video-top { width: 8%; left: 46%; top: 50px }
+    .info__text { min-height: 60px; font-size: 1.4rem; line-height: 14px }
 }
 
 @media screen and (device-width: 320px) and (device-height: 480px) and (orientation: landscape) {
@@ -980,7 +974,7 @@ a {
     .header {  }
     .header__icons { }
     .header__notice { margin-right: 5px }
-    .video-top { top: 80px; height: 190px }
+    .video-top { top: 30% }
     .video-middle { top: 90px }
     .video-pre-bottom { top: 54% }
     .video-bottom { height: 175px }
@@ -990,7 +984,7 @@ a {
     .title { font-size: 1.7rem }
     .button__submit { font-size: 2rem }
     .button__cancel {  }
-    .headInfo__text, .footer__inner { transform: scaleX(0.93) scaleY(.9); }
+    .info__text { transform: scaleX(0.93) scaleY(.9); }
 }
 
 @media screen and (min-height: 501px) and (max-height: 570px) and (orientation: portrait) {
@@ -1045,7 +1039,7 @@ and (orientation : landscape)
         padding-bottom: 2px;
         width: 100%;
     }
-    .footer__inner { font-size: 1.4rem }
+    .info__text { font-size: 1.3rem }
 }
 
 @media only screen
@@ -1149,13 +1143,13 @@ and (-webkit-min-device-pixel-ratio : 2) {
 
 @media screen and ( min-width: 765px ) and ( orientation: portrait ) {
     .header { }
-    .headInfo__text, .footer__inner { line-height: 14px; font-size: 1.4rem }
+    .info__text { line-height: 14px; font-size: 1.4rem }
     .video-top { height: 250px; width: 615px; top: 120px; left: 10%; }
     .button__submit { justify-content: center; }
     .button__icon { margin-left: 4%; }
 }
 @media screen and ( min-height: 765px ) and ( orientation: landscape ) {
     .header { height: 90px; }
-    .headInfo__text, .footer__inner { line-height: 14px; font-size: 1.4rem }
+    .info__text { line-height: 14px; font-size: 1.4rem }
     .video-top { display: block; height: 240px; top: 100px; width: 60%; left: 20% }
 }

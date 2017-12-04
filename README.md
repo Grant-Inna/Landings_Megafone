@@ -4,7 +4,7 @@ Testing repo for plenty of landings
 
 [**Video**](https://grant-inna.github.io/Landings_Megafone/Video)
 
-[**Games**](ttps://grant-inna.github.io/Landings_Megafone/Games) in process*
+[**Games**](https://grant-inna.github.io/Landings_Megafone/Games) in process*
 
 [**Music**](https://grant-inna.github.io/Landings_Megafone/Music) *coming soon!*
 

@@ -40,6 +40,10 @@ gulp.task('CSS', function() {
 });
 
 
+gulp.task('watch_html', ['browser'], function() {
+    gulp.watch('../index.html').on('change', browserSync.reload)
+});
+
 gulp.task('watch_CSS', ['browser'], function() {
     gulp.watch('*.scss', ['CSS']);
     gulp.watch('*.scss').on('change', browserSync.reload)

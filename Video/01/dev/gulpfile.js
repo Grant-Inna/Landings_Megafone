@@ -5,37 +5,48 @@ const gulp = require('gulp'),
     cleanCSS = require('gulp-clean-css'),
     imagemin = require('gulp-imagemin'),
     rename = require("gulp-rename"),
-    notify = require("gulp-notify");
+    notify = require("gulp-notify"),
+    browserSync = require("browser-sync").create(),
+    sourcemaps = require("gulp-sourcemaps");
 
 
+gulp.task( 'browser', function() {
+    browserSync.init({
+        server: {
+            baseDir: '../'
+        }
+    });
+});
 
 gulp.task('imageMIN', function() {
-    return gulp.src('./*.{png,jpg,jpeg,svg}')
+    return gulp.src( '*.{png,jpg,jpeg,svg}' )
         .pipe(imagemin())
-        .pipe(gulp.dest('../'))
+        .pipe(gulp.dest( '../' ))
         .pipe(notify('Images Compress Success!'));
 });
 
 
 gulp.task('CSS', function() {
-    return gulp.src('style.scss')
+    return gulp.src( 'style.scss' )
+        .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(groupMedia())
-        .pipe(autoprefixer({browsers: ['last 5 versions', '> 3%']}))
+        .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
         .pipe(cleanCSS())
-        .pipe(rename("style.min.css"))
-        .pipe(gulp.dest('../'))
+        .pipe(rename( {suffix: '.min'} ))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest( '../' ))
         .pipe(notify('CSS Success!'));
 });
 
 
-gulp.task('watch_CSS', function() {
+gulp.task('watch_CSS', ['browser'], function() {
     gulp.watch('*.scss', ['CSS'])
 });
 
 
 gulp.task('watch_imageMIN', function() {
-    gulp.watch('img/', ['imageMIN'])
+    gulp.watch('*.{png,jpg,jpeg,svg}', ['imageMIN'])
 });
 
 gulp.task('default', ['CSS', 'watch_CSS']);

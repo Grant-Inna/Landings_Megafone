@@ -765,6 +765,7 @@ a {
     color:  $color-age;
 }
 .info__text {
+    font-family: Arial !important;
     font-size: 1.1rem;
     font-weight: 400;
     transform: scaleX(.93) scaleY(.7);
@@ -936,7 +937,6 @@ a {
 }
 
 
-.info__text { font-family:Arial !important; }
 
 @media (orientation: landscape) {
     .lbody {

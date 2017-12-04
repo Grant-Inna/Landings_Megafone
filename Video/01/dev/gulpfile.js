@@ -1,6 +1,5 @@
 const gulp = require('gulp'),
     sass =  require('gulp-sass'),
-    csscomb = require('gulp-csscomb'),
     groupMedia = require('gulp-group-css-media-queries'),
     autoprefixer = require('gulp-autoprefixer'),
     cleanCSS = require('gulp-clean-css'),
@@ -23,7 +22,6 @@ gulp.task('CSS', function() {
         .pipe(sass().on('error', sass.logError))
         .pipe(groupMedia())
         .pipe(autoprefixer({browsers: ['last 5 versions', '> 3%']}))
-        .pipe(csscomb())
         .pipe(cleanCSS())
         .pipe(rename("style.min.css"))
         .pipe(gulp.dest('../'))

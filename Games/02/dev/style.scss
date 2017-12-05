@@ -1,23 +1,23 @@
 $back-body:  url('bg.png') center no-repeat; $back-size-body: cover;
 
 $back-header-logo: transparent;/*url('logo.png') left bottom no-repeat;*/
-$back-header: rgba(41, 32, 32, .96); $back-size-header: 100% 100%;
+$back-header: rgba(83, 74, 64, .93); $back-size-header: 100% 100%;
 $box-sh-header: none;
 $height-header: auto;
 
 $back-head-info: rgba(41, 32, 32, .96);
-$color-age: rgb(154, 140, 140);
+$color-age: rgb(192, 192, 192);
 
 $back-age: transparent;/*url('18.png') center no-repeat;*/ $back-size-age: contain;
 
-$back-button: rgb(240, 141, 70);/*url('back-button.png') bottom no-repeat;*/ $back-size-button: 100% 100%;
+$back-button: rgb(239, 157, 0);/*url('back-button.png') bottom no-repeat;*/ $back-size-button: 100% 100%;
 $box-sh-button: none;
-$back-button-icon: url('button-icon.png') center no-repeat;
+$back-button-icon: transparent; /*url('button-icon.png') center no-repeat;*/
 $color-button: rgb(255, 255, 255);
 $width-button: 95%;
 $height-button: 30%;
 $margin-bottom-button: 15px;
-$border-r-button: 40px;
+$border-r-button: 2px;
 $font-size-button: 2.4rem;
 $font-width-button: 600;
 
@@ -30,11 +30,11 @@ $height-main: 240px;
 $width-main: 94%;
 $padding-top-main: 0;
 
-$back-footer: rgba(41, 32, 32, .98);
-$color-footer: rgb(154, 140, 140);
+$back-footer: rgba(82, 73, 62, .98);
+$color-footer: rgb(151, 151, 151);
 
-$back-cancel: rgba(41, 32, 32, .96);
-$color-cancel: rgb(154, 140, 140);
+$back-cancel: rgba(83, 74, 64, .9);
+$color-cancel: rgb(186, 186, 186);
 
 
 $back-text: transparent; /*url('back-text.png') center no-repeat;*/
@@ -661,7 +661,7 @@ template {
 
 html,
 body {
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: 'Arial', sans-serif !important;
     color: #000;
     height: 100%;
 }
@@ -861,7 +861,7 @@ a {
 .lighter { color: rgb(183, 197, 215); }
 
 
-.loupe { display: block; width: 40px; height: 35px; margin-bottom: 35px; background: url('v-top.png') center no-repeat; background-size: contain }
+.loupe { display: block; width: 40px; height: 35px; margin-bottom: 35px; background: url('18.png') center no-repeat; background-size: contain }
 
 .button__wrapper {
     background: $back-form;
@@ -1160,5 +1160,5 @@ and (-webkit-min-device-pixel-ratio : 2) {
 }
 
 @media (orientation: landscape) and (min-width: 760px) {
-
+   
 }

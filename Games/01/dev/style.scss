@@ -8,7 +8,7 @@ $height-header: auto;
 $back-head-info: rgba(41, 32, 32, .96);
 $color-age: rgb(154, 140, 140);
 
-$back-age: url('18.png') center no-repeat; $back-size-age: contain;
+$back-age: transparent;/*url('18.png') center no-repeat;*/ $back-size-age: contain;
 
 $back-button: rgb(240, 141, 70);/*url('back-button.png') bottom no-repeat;*/ $back-size-button: 100% 100%;
 $box-sh-button: none;
@@ -56,7 +56,7 @@ $back-form: transparent;
 $back-menu: transparent;/*url('menu.png') center no-repeat;*/ $back-size-head-menu: contain;
 $back-notice: transparent;/*url('back-notice.png') center no-repeat;*/
 
-$back-v-top: url('v-top.png') center no-repeat;
+$back-v-top: transparent; /*url('v-top.png') center no-repeat;*/
 $back-v-middle: transparent; /* /*url('v-middle.png') center no-repeat;*/
 $back-v-bottom:  transparent; /*url('v-bottom.png') center no-repeat;*/
 $back-v-pre-bottom:  transparent; /*url('v-pre-bottom.png') center no-repeat;*/
@@ -176,9 +176,12 @@ html {
  */
 body {
     margin: 0;
-    max-width: 1400px;
     width: 100%;
     height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /**
@@ -696,6 +699,8 @@ a {
 .lbody {
     height: 100%;
     width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
     background: $back-body;
     background-size: $back-size-body;
     position: relative;
@@ -856,7 +861,7 @@ a {
 .lighter { color: rgb(183, 197, 215); }
 
 
-.loupe { margin-bottom: 35px;  }
+.loupe { display: block; width: 40px; height: 35px; margin-bottom: 35px; background: url('v-top.png') center no-repeat; background-size: contain }
 
 .button__wrapper {
     background: $back-form;
@@ -899,7 +904,7 @@ a {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10px 20%;
+    padding: 10px;
     margin-bottom: $margin-bottom-button;
     box-shadow: $box-sh-button;
 
@@ -938,16 +943,16 @@ a {
 }
 
 
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-width: 989px) {
     .lbody {
         background-position: center 30%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .loupe { margin-bottom: 0 }
+    .loupe { height: 100px; width: 50px; margin-bottom: 10px }
     .top-menu-holder { display: none }
-    .main { justify-content: center; background: transparent; height: 120px; margin-bottom: 0; margin-top: 35px; }
+    .main { justify-content: center; background: transparent; height: 155px; margin-bottom: 0; margin-top: 35px; }
     .button__wrapper { justify-content: flex-start; margin-top: 3%;}
     .video-middle, .video-pre-bottom { display: none }
     .video-bottom, .video-middle { display: block; top: 40px; height: 90% }
@@ -1144,7 +1149,7 @@ and (-webkit-min-device-pixel-ratio : 2) {
 @media screen and ( min-width: 765px ) and ( orientation: portrait ) {
     .header { }
     .info__text { line-height: 14px; font-size: 1.4rem }
-    .video-top { height: 250px; width: 615px; top: 120px; left: 10%; }
+    .video-top { }
     .button__submit { justify-content: center; }
     .button__icon { margin-left: 4%; }
 }
@@ -1152,4 +1157,8 @@ and (-webkit-min-device-pixel-ratio : 2) {
     .header { height: 90px; }
     .info__text { line-height: 14px; font-size: 1.4rem }
     .video-top { display: block; height: 240px; top: 100px; width: 60%; left: 20% }
+}
+
+@media (orientation: landscape) and (min-width: 760px) {
+   
 }

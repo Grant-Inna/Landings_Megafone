@@ -568,3 +568,7 @@ a {
 }
 
 .headInfo__text { padding: 2px }
+
+@media ( max-width: 350px ) {
+  .header__inner { height: 30px; }
+}

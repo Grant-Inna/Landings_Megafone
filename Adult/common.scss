@@ -53,6 +53,8 @@ body {
 
 }
 
+.lbody { max-width: 1400px; margin: 0 auto; }
+
 /**
  * Add the correct display in IE 9-.
  */
@@ -560,3 +562,9 @@ a {
   line-height: 12px;
   text-align: center;
 }
+
+.button__submit {
+  max-width: 360px;
+}
+
+.headInfo__text { padding: 2px }

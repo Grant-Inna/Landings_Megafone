@@ -28,20 +28,19 @@ gulp.task('imageMIN', function() {
 
 gulp.task('CSS', function() {
     return gulp.src( 'style.scss' )
-        .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(groupMedia())
         .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
         .pipe(cleanCSS())
         .pipe(rename( {suffix: '.min'} ))
-        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest( '../' ))
         .pipe(notify('CSS Success!'));
 });
 
 
 gulp.task('watch_CSS', ['browser'], function() {
-    gulp.watch('*.scss', ['CSS'])
+    gulp.watch('*.scss', ['CSS']);
+    gulp.watch('*.scss', browserSync.reload)
 });
 
 

@@ -1,6 +1,7 @@
 # Landings_Megafone
 Testing repo for plenty of landings
 
+[**Adult**](https://grant-inna.github.io/Landings_Megafone/Adult)
 
 [**Video**](https://grant-inna.github.io/Landings_Megafone/Video)
 

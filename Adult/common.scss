@@ -532,7 +532,7 @@ template {
 
 html,
 body {
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: 'Arial', sans-serif !important;
   color: #000;
   height: 100%;
 }
@@ -564,11 +564,21 @@ a {
 }
 
 .button__submit {
-  max-width: 360px;
+  max-width: 360px !important;
+  max-height: 95px !important;
+  transition: .05s ease-in-out !important;
 }
 
 .headInfo__text { padding: 2px }
 
+.headInfo__text, .footer__inner { transform: none !important; }
+
 @media ( max-device-width: 350px ) {
   .header__inner { height: 30px; }
+}
+@media screen and ( min-width: 765px ) and ( orientation: portrait ) {
+  .info__text { line-height: 14px; font-size: 1.4rem }
+}
+@media screen and ( min-height: 765px ) and ( orientation: landscape ) {
+  .info__text { line-height: 14px; font-size: 1.4rem }
 }

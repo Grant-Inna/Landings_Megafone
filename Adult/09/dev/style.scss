@@ -347,7 +347,7 @@ $height-header-right: 90%;
 }
 
 
-@media (orientation: landscape) {
+@media screen and (orientation: landscape) {
     .lbody {
         background-position: center 93%;
         display: flex;

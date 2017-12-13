@@ -375,7 +375,7 @@ a {
     color:  $color-footer;
 }
 
-@media (orientation: landscape) {
+@media screen and (orientation: landscape) {
     .lbody {
         background-position: center 90%;
         display: flex;

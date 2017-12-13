@@ -575,7 +575,7 @@ a {
 
 .headInfo__text, .footer__inner { transform: none !important; }
 
-@media ( max-device-width: 350px ) {
+@media screen and ( max-device-width: 350px ) {
   .header__inner { height: 37px; }
 }
 @media screen and ( min-width: 765px ) and ( orientation: portrait ) {

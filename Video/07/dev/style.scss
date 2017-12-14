@@ -18,7 +18,8 @@ $back-button-icon: url('button-icon.png') center no-repeat;
 $color-button: rgb(255, 255, 255);
 $width-button: 95%;
 $height-button: 30%;
-$margin-bottom-button: -20px;
+$margin-bottom-button: 0;
+$margin-top-button: 60px;
 $border-r-button: 40px;
 $font-size-button: 2.4rem;
 $font-width-button: 600;
@@ -341,6 +342,7 @@ $height-header-right: 100%;
     align-items: center;
     padding: 10px 20px;
     margin-bottom: $margin-bottom-button;
+    margin-top: $margin-top-button;
     box-shadow: $box-sh-button;
 
 }
@@ -519,8 +521,19 @@ and (-webkit-min-device-pixel-ratio : 2) {
 and (min-device-width : 410px)
 and (min-device-height : 730px)
 and (orientation : portrait) {
+    .main {
+        height: 275px;
+    }
 }
 
+@media screen
+and (min-device-width : 500px)
+and (min-device-height : 850px)
+and (orientation : portrait) {
+    .main {
+        height: 320px;
+    }
+}
 @media only screen
 and (device-width : 414px)
 and (device-height : 736px)

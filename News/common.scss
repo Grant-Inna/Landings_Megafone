@@ -570,6 +570,7 @@ a {
   min-height: 50px !important;
   transition: .05s ease-in-out !important;
 }
+.button__cancel { margin-top: 13px; }
 
 .footer { padding: 3px 4px 5px; }
 
@@ -585,4 +586,20 @@ a {
 }
 @media screen and ( min-height: 765px ) and ( orientation: landscape ) {
   .info__text, .headInfo__text, .footer__inner { line-height: 12px !important; font-size: 1rem !important }
+}
+
+
+@media only screen and (min-width : 600px) and (min-height : 600px) {
+  .main {
+    background: url('back-main.png') bottom no-repeat !important;
+    background-size: 100% 100% !important;
+    width: 60% !important; height: 350px !important;
+    justify-content: end !important;}
+}
+@media only screen and (min-width : 719px) and ( min-height : 719px ) and ( orientation: landscape ) {
+  .main {
+    background: url('back-main.png') bottom no-repeat !important;
+    background-size: 100% 100% !important;
+    width: 50% !important; height: 300px !important;
+    justify-content: end !important;}
 }

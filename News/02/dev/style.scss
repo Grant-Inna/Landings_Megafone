@@ -2,7 +2,7 @@
 
 $back-body:  url('bg.png') bottom no-repeat; $back-size-body: cover;
 
-$back-header-logo: url('logo.png') left bottom no-repeat;
+$back-header-logo: url('logo.png') left center no-repeat;
 $back-header:  url('back-header.png') left bottom no-repeat; $back-size-header: 100% 100%;
 $box-sh-header: none;
 $height-header: auto;
@@ -238,7 +238,7 @@ $height-header-right: 100%;
 
 .header__age  { min-width: 40px; height: 100%; font-size: 1.7rem; font-weight: 400; display: flex; align-items: center; justify-content: center; background: $back-age; background-size: $back-size-age; color: $color-age;  border: $border-age; border-radius: $border-r-age; z-index: 100}
 .header__menu { width: 20px; height: 100%; margin-left: 15px; background: $back-menu; background-size: $back-size-head-menu; color: $color-menu; font-size: 1.5rem; padding: $padding-menu-icon; border-radius: $border-r-menu; display: flex; align-items: center; justify-content: center; }
-.header__notice { width: 80%; height: 100%; margin-bottom: 4px; background: $back-notice; margin-left: 10px; background-size: contain; border-radius: $border-r-menu; display: flex; align-items: center; justify-content: center; }
+.header__notice { width: 80%; height: 100%; margin-bottom: 0; background: $back-notice; margin-left: 10px; background-size: contain; border-radius: $border-r-menu; display: flex; align-items: center; justify-content: center; }
 .header__menu-holder { width: 20px; height: 12px; display: flex; flex-direction: column; justify-content: space-between; align-items: center}
 .header__menu-stick { height: 2px; width: 100%; background: $color-header-stick }
 

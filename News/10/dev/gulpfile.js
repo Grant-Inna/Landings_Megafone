@@ -31,7 +31,7 @@ gulp.task('CSS', function() {
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(groupMedia())
-        .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
+        .pipe(autoprefixer({browsers: ['last 5 versions', '> 0.05%']}))
         .pipe(cleanCSS())
         .pipe(rename( {suffix: '.min'} ))
         .pipe(sourcemaps.write('dev/'))

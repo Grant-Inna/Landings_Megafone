@@ -37,7 +37,7 @@
     background: url('back-main.png') bottom no-repeat !important;
     background-size: 100% 100% !important;
     width: 60% !important; height: 350px !important;
-    justify-content: end !important;}
+    justify-content: flex-end !important;}
 
   .video-top { display: block; height: 200px; width: 34%; left: 33%}
 }
@@ -46,7 +46,7 @@
     background: url('back-main.png') bottom no-repeat !important;
     background-size: 100% 100% !important;
     width: 50% !important; height: 300px !important;
-    justify-content: end !important;}
+    justify-content: flex-end !important;}
 }
 
 @media screen and (max-height: 370px) and (orientation: landscape) {

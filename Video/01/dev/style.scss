@@ -175,6 +175,7 @@ $height-header-right: 60%;
 
 .main {
   height: 100%;
+  width: 100%;
   padding-top: 80px;
   display: flex;
   flex-direction: column;
@@ -615,9 +616,6 @@ $height-header-right: 60%;
     margin-top: 3px
   }
 
-  .video-top {
-    display: none
-  }
 }
 
 @media screen and (device-width: 320px) and (device-height: 480px) and (orientation: landscape) {
@@ -888,7 +886,7 @@ $height-header-right: 60%;
     font-size: 1.4rem
   }
   .video-top {
-    display: block;
+    display: block !important;
     height: 240px;
     top: 100px;
     width: 60%;

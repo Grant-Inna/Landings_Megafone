@@ -17,8 +17,8 @@ $back-button-icon: url('button-icon.png') center no-repeat;
 $color-button: rgb(255, 255, 255);
 $width-button: 95%;
 $height-button: 30%;
-$margin-bottom-button: 20px;
-$margin-top-button: 40px;
+$margin-bottom-button: 2px;
+$margin-top-button: 4px;
 $border-r-button: 40px;
 $font-size-button: 2.4rem;
 $font-width-button: 600;
@@ -584,5 +584,6 @@ and (-webkit-min-device-pixel-ratio : 2) {
     .video-top { display: block; height: 240px; top: 100px; width: 60%; left: 20% }
 }
 @media screen and ( min-width: 990px ) and (orientation: landscape) {
-    .main { height: 330px; width: 98%; background: url(back-main.png) center no-repeat; background-size: contain; margin-bottom: 260px;}
+    .main { height: 330px; width: 98%; background: url(back-main.png) center no-repeat; background-size: contain;}
 }
+

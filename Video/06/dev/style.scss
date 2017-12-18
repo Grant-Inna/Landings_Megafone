@@ -690,7 +690,7 @@ $height-header-right: 100%;
     -ms-flex-align: center;
     align-items: center;
     padding: 10px 20px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     -webkit-box-shadow: 11px 19px 68px 0 rgba(223, 47, 17, .42);
     box-shadow: 11px 19px 68px 0 rgba(223, 47, 17, .42)
 }
@@ -965,6 +965,12 @@ and (-webkit-min-device-pixel-ratio : 2) {
 }
 
 @media screen and ( min-width: 990px ) and (orientation: landscape) {
-    .main { height: 330px; width: 98%; background: url(back-main.png) center no-repeat; background-size: contain; margin-bottom: 260px;}
+    .main { height: 330px; width: 98%; background: url(back-main.png) center no-repeat; background-size: contain; }
 }
 
+
+@media screen and (min-height: 300px) and (max-width: 500px) and ( orientation: landscape ) {
+    .main {
+        height: 170px;
+    }
+}

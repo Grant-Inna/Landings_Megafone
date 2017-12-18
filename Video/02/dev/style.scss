@@ -27,8 +27,8 @@ $border-r-cancel: 2px;
 $back-main: url('back-main.png') bottom no-repeat;
 $back-size-main: 100% 100%;
 $back-main: url('back-main.png') center no-repeat; $back-size-main: contain;
-$height-main: 240px;
-$width-main: 90%;
+$height-main: 260px;
+$width-main: 94%;
 $padding-top-main: 0;
 
 $back-footer: rgb(27, 43, 69);
@@ -578,3 +578,21 @@ and (-webkit-min-device-pixel-ratio : 2) {
     .info__text { line-height: 14px; font-size: 1.4rem }
     .video-top { display: block; height: 240px; top: 100px; width: 60%; left: 20% }
 }
+
+@media only screen and (min-width : 719px) and ( min-height : 599px ) and ( orientation: landscape ) {
+    .main {
+        justify-content: end !important;}
+}
+@media only screen and (min-width : 719px) and ( min-height : 719px ) and ( orientation: portrait ) {
+    .main {
+        justify-content: end !important;}
+}
+@media only screen and (min-width : 600px) and (min-height : 600px) {
+    .main {
+        background: url('back-main.png') bottom no-repeat !important;
+        background-size: 100% 100% !important;
+        width: 60% !important; height: 350px !important;
+        justify-content: end !important;}
+}
+
+@import "../../media-xs-c-outside";

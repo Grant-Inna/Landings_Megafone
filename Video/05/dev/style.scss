@@ -374,7 +374,7 @@ $height-header-right: 100%;
     }
     .loupe { margin-bottom: 0 }
     .top-menu-holder { display: none }
-    .main { justify-content: center; background: transparent; height: 100px; margin-bottom: 0; margin-top: 35px; }
+    .main { justify-content: center; background: transparent; height: 140px; margin-bottom: 0; margin-top: 35px; }
     .button__wrapper { justify-content: flex-start; margin-top: 3%;}
     .video-middle, .video-pre-bottom, .video-top { display: none }
     .video-bottom, .video-middle { display: block; top: 40px; height: 90% }
@@ -383,7 +383,7 @@ $height-header-right: 100%;
     }
 
     .wrapper__btn { height: 60px; margin-top: 0; margin-bottom: 0 }
-    .button__submit {  justify-content: center; height: 100%; /*min-height: 70px*/ }
+    .button__submit {  justify-content: center; height: 85%; /*min-height: 70px*/ }
     .button__icon { margin-left: 4% }
     .header { height: 85px }
     .header__logo { height: 70%; margin-top: 5px }
@@ -403,7 +403,7 @@ $height-header-right: 100%;
     .header {  }
     .header__icons { width: 50% }
     .header__notice { width: 25px; margin-right: 5px }
-    .video-top { top: 80px; height: 190px }
+    .video-top { top: 80px; height: 160px }
     .video-middle { top: 90px }
     .video-pre-bottom { top: 54% }
     .video-bottom { height: 175px }

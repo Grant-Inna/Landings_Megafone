@@ -32,12 +32,14 @@
 }
 
 
-@media only screen and (min-width : 600px) and (min-height : 600px) {
+@media screen and (min-width : 600px) and (min-height : 600px) {
   .main {
     background: url('back-main.png') bottom no-repeat !important;
     background-size: 100% 100% !important;
     width: 60% !important; height: 350px !important;
     justify-content: end !important;}
+
+  .video-top { display: block; height: 200px; width: 34%; left: 33%}
 }
 @media only screen and (min-width : 719px) and ( min-height : 719px ) and ( orientation: landscape ) {
   .main {
@@ -70,9 +72,7 @@
   .video-top { display: block; height: 300px; top: 100px; width: 50%; left: 25% }
 }
 
-@media screen and ( min-width: 600px ) and ( min-height: 600px ) {
-  .video-top { display: block; height: 200px; width: 34%; left: 33%}
-}
+
 @media screen and ( min-width: 1200px ) and ( min-height: 740px ) {
   .video-top {
     display: block;

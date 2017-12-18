@@ -143,6 +143,42 @@ gulp.task('CSS10', function() {
 
 var all = [ 'CSS1', 'CSS2', 'CSS3', 'CSS4', 'CSS5', 'CSS6', 'CSS7', 'CSS8', 'CSS9', 'CSS10' ];
 
+var tasks = [{
+    CSS1 : 1,
+    style: '10/dev/style.scss',
+    path: '10/'
+    }
+];
+
+
+
+
+var runTask = function(pathToStyle, pathToFolder, task) {
+ gulp.src( pathToStyle )
+            .pipe(sourcemaps.init())
+            .pipe(sass().on('error', sass.logError))
+            .pipe(groupMedia())
+            .pipe(cleanCSS())
+            .pipe(rename( {suffix: '.min'} ))
+            .pipe(sourcemaps.write('dev/'))
+            .pipe(gulp.dest( pathToFolder ))
+            .pipe(notify('CSS10 Success!'));
+};
+
+function pad(num, size) {
+    var s = num+"";
+    while (s.length < size) s = "0" + s;
+    return s;
+}
+
+gulp.task('main', function() {
+    for (var i = 1; i <= all.length + 1; i++) {
+        var formaedStringNumber = pad(i,10);
+        runTask(formaedStringNumber + '/dev/style.scss', formaedStringNumber + '/', all[i - 1])
+    }
+});
+
+gulp.task('laneganTask', ['main']);
 gulp.task( 'default', all);
 
 

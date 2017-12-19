@@ -9,8 +9,8 @@ Testing repo for plenty of landings
 
 [**Host**](https://grant-inna.github.io/Landings_Megafone/Host) 
 
-[**Games**](https://grant-inna.github.io/Landings_Megafone/Games) *in process*
+[**Games**](https://grant-inna.github.io/Landings_Megafone/Games) 
 
-[**Music**](https://grant-inna.github.io/Landings_Megafone/Music) *coming soon!*
+[**Music**](https://grant-inna.github.io/Landings_Megafone/Music) *in process*
 
 [**General**](https://grant-inna.github.io/Landings_Megafone/General) *coming soon!*

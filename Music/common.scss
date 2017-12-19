@@ -53,7 +53,7 @@ body {
 
 }
 
-.lbody { max-width: 1400px; margin: 0 auto; }
+.lbody { max-width: 900px; margin: 0 auto; }
 
 /**
  * Add the correct display in IE 9-.
@@ -567,21 +567,13 @@ a {
 .button__submit {
   max-width: 360px !important;
   max-height: 95px !important;
+  min-height: 50px !important;
   transition: .05s ease-in-out !important;
 }
+.button__cancel { margin-top: 13px; }
 
 .footer { padding: 3px 4px 5px; }
 
 .headInfo__text { padding: 2px }
 
 .headInfo__text, .footer__inner, .info__text { transform: none !important; }
-
-@media screen and ( max-device-width: 350px ) {
-  .header__inner { height: 37px; }
-}
-@media screen and ( min-width: 765px ) and ( orientation: portrait ) {
-  .info__text, .headInfo__text, .footer__inner { line-height: 12px !important; font-size: 1rem !important }
-}
-@media screen and ( min-height: 765px ) and ( orientation: landscape ) {
-  .info__text, .headInfo__text, .footer__inner { line-height: 12px !important; font-size: 1rem !important }
-}

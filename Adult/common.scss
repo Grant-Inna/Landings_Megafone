@@ -53,7 +53,7 @@ body {
 
 }
 
-.lbody { max-width: 1400px; margin: 0 auto; }
+.lbody { max-width: 900px; margin: 0 auto; }
 
 /**
  * Add the correct display in IE 9-.
@@ -622,12 +622,12 @@ a {
     background: url('back-main.png') bottom no-repeat !important;
     background-size: 100% 100% !important;
     width: 60% !important; height: 350px !important;
-    justify-content: end !important;}
+    justify-content: flex-end !important;}
 }
 @media only screen and (min-width : 719px) and ( min-height : 719px ) and ( orientation: landscape ) {
   .main {
     background: url('back-main.png') bottom no-repeat !important;
     background-size: 100% 100% !important;
     width: 50% !important; height: 300px !important;
-    justify-content: end !important;}
+    justify-content: flex-end !important;}
 }

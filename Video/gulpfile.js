@@ -11,11 +11,13 @@ const gulp = require('gulp'),
 
 
 
+
+
 gulp.task('CSS1', function() {
     return gulp.src( '01/dev/style.scss' )
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(groupMedia())
+        .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
         .pipe(cleanCSS())
         .pipe(rename( {suffix: '.min'} ))
         .pipe(sourcemaps.write('dev/'))
@@ -28,7 +30,7 @@ gulp.task('CSS2', function() {
     return gulp.src( '02/dev/style.scss' )
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(groupMedia())
+        .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
         .pipe(cleanCSS())
         .pipe(rename( {suffix: '.min'} ))
         .pipe(sourcemaps.write('dev/'))
@@ -41,7 +43,7 @@ gulp.task('CSS3', function() {
     return gulp.src( '03/dev/style.scss' )
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(groupMedia())
+        .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
         .pipe(cleanCSS())
         .pipe(rename( {suffix: '.min'} ))
         .pipe(sourcemaps.write('dev/'))
@@ -54,7 +56,7 @@ gulp.task('CSS4', function() {
     return gulp.src( '04/dev/style.scss' )
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(groupMedia())
+        .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
         .pipe(cleanCSS())
         .pipe(rename( {suffix: '.min'} ))
         .pipe(sourcemaps.write('dev/'))
@@ -67,7 +69,7 @@ gulp.task('CSS5', function() {
     return gulp.src( '05/dev/style.scss' )
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(groupMedia())
+        .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
         .pipe(cleanCSS())
         .pipe(rename( {suffix: '.min'} ))
         .pipe(sourcemaps.write('dev/'))
@@ -76,10 +78,12 @@ gulp.task('CSS5', function() {
 });
 
 
+
 gulp.task('CSS6', function() {
     return gulp.src( '06/dev/style.scss' )
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
         .pipe(groupMedia())
         .pipe(cleanCSS())
         .pipe(rename( {suffix: '.min'} ))
@@ -93,6 +97,7 @@ gulp.task('CSS7', function() {
     return gulp.src( '07/dev/style.scss' )
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
         .pipe(groupMedia())
         .pipe(cleanCSS())
         .pipe(rename( {suffix: '.min'} ))
@@ -106,6 +111,7 @@ gulp.task('CSS8', function() {
     return gulp.src( '08/dev/style.scss' )
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
         .pipe(groupMedia())
         .pipe(cleanCSS())
         .pipe(rename( {suffix: '.min'} ))
@@ -119,6 +125,7 @@ gulp.task('CSS9', function() {
     return gulp.src( '09/dev/style.scss' )
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
         .pipe(groupMedia())
         .pipe(cleanCSS())
         .pipe(rename( {suffix: '.min'} ))
@@ -132,6 +139,7 @@ gulp.task('CSS10', function() {
     return gulp.src( '10/dev/style.scss' )
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
         .pipe(groupMedia())
         .pipe(cleanCSS())
         .pipe(rename( {suffix: '.min'} ))

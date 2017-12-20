@@ -55,6 +55,13 @@ body {
 
 .lbody { max-width: 900px; margin: 0 auto; }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /**
  * Add the correct display in IE 9-.
  */
@@ -565,7 +572,7 @@ a {
 }
 
 .button__submit {
-  max-width: 360px !important;
+  max-width: 400px !important;
   max-height: 95px !important;
   min-height: 50px !important;
   transition: .05s ease-in-out !important;

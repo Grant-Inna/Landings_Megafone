@@ -17,7 +17,7 @@
 
 @media only screen and (min-width : 719px) and ( min-height : 599px ) and ( orientation: landscape ) {
   .main {
-    justify-content: end !important;}
+    justify-content: flex-end!important;}
 }
 @media only screen and (min-width : 719px) and ( min-height : 719px ) and ( orientation: portrait ) {
   .main {

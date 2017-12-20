@@ -55,6 +55,12 @@ body {
 
 .lbody { max-width: 900px; margin: 0 auto; }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /**
  * Add the correct display in IE 9-.
  */

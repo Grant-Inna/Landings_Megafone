@@ -13,4 +13,4 @@ Testing repo for plenty of landings
 
 [**Music**](https://grant-inna.github.io/Landings_Megafone/Music) 
 
-[**General**](https://grant-inna.github.io/Landings_Megafone/General) *in process*
+[**General**](https://grant-inna.github.io/Landings_Megafone/General) 

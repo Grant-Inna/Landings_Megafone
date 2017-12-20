@@ -21,12 +21,12 @@
 }
 @media only screen and (min-width : 719px) and ( min-height : 719px ) and ( orientation: portrait ) {
   .main {
-    justify-content: end !important;}
+    justify-content: flex-end !important;}
 }
 @media only screen and (min-width : 600px) and (min-height : 600px) {
   .main {
     background: url('back-main.png') bottom no-repeat !important;
     background-size: 100% 100% !important;
     width: 60% !important; height: 350px !important;
-    justify-content: end !important;}
+    justify-content: flex-end !important;}
 }

@@ -573,8 +573,9 @@ a {
 
 .button__submit {
   max-width: 400px !important;
+  min-width: 200px !important;
   max-height: 95px !important;
-  min-height: 50px !important;
+  min-height: 65px !important;
   transition: .05s ease-in-out !important;
 }
 .button__cancel { margin-top: 13px; }

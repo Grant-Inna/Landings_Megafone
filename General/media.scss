@@ -39,7 +39,7 @@
     width: 60% !important; height: 350px !important;
     justify-content: flex-end !important;}
 
-  .video-top { display: block; height: 200px; width: 34%; left: 33%}
+  .video-top { display: block; height: 200px; width: 66% !important; left: 18% !important }
 }
 @media only screen and (min-width : 719px) and ( min-height : 719px ) and ( orientation: landscape ) {
   .main {
@@ -78,7 +78,7 @@
     display: block;
     height: 300px;
     top: 100px;
-    width: 40% !important;
-    left: 30% !important;
+    width: 70% !important;
+    left: 16% !important;
   }
 }

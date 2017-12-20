@@ -573,7 +573,7 @@ and (-webkit-min-device-pixel-ratio : 2) {
     }
 }
 @media screen and ( min-width: 600px ) and ( min-height: 600px ) {
-    .video-top { display: block; height: 225px !important; width: 66% !important; left: 18% !important }
+    .video-top { display: block; height: 225px !important;}
 }
 
 @media screen and ( min-width: 800px ) and ( min-height: 720px ) {

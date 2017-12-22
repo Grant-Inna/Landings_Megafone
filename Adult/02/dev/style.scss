@@ -344,7 +344,7 @@ a {
 .button__cancel { width: 100px; min-height: 25px; padding: 7px 3px; background-color: $back-cancel; color: $color-cancel; text-decoration: none; text-align: center; font-size: 20px;/* font-stretch: condensed;*/ font-variant: all-small-caps; border: none; border-radius: $border-r-cancel; transform: scaleX(0.93) scaleY(0.7)}
 
 
-.button__icon { width: 35px; height: 25px; background: $back-button-icon; background-size: contain; }
+.button__icon { width: 35px; height: 35px; background: $back-button-icon; background-size: contain; }
 
 .footer {
     background: $back-footer;

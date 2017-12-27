@@ -29,7 +29,7 @@ $border-r-cancel: 2px;
 
 
 $back-size-main: 100% 100%;
-$back-main: url('back-main.png') center no-repeat; $back-size-main: contain;
+$back-main: transparent !important; /*url('back-main.png') center no-repeat;*/ $back-size-main: contain;
 $height-main: 240px;
 $width-main: 90%;
 $padding-top-main: 0;
@@ -601,4 +601,10 @@ and (-webkit-min-device-pixel-ratio : 2) {
         justify-content: end !important;}
     .button__submit { margin-bottom: 0; }
     .button__cancel { margin-bottom: 30px; margin-top: 12px  !important;}
+}
+
+
+.lbody .wrapper .main {
+    background: transparent !important;
+    background: none !important;
 }

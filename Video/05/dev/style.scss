@@ -24,7 +24,7 @@ $border-r-cancel: 20px;
 
 
 $back-size-main: 100% 100%;
-$back-main: url('back-main.png') center no-repeat; $back-size-main: contain;
+$back-main: transparent; /*url('back-main.png') center no-repeat;*/ $back-size-main: contain;
 $height-main: 240px;
 $width-main: 90%;
 $padding-top-main: 0;
@@ -32,8 +32,8 @@ $padding-top-main: 0;
 $back-footer: rgb(0, 0, 0);
 $color-footer: rgb(117, 117, 117);
 
-$back-cancel: rgb(0, 0, 0);
-$color-cancel: rgb(155, 155, 155);
+$back-cancel: rgb(242, 238, 160);
+$color-cancel: rgb(0, 0, 0);
 
 $color-age: rgb(155, 155, 155);
 

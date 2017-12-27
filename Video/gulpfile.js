@@ -152,9 +152,12 @@ gulp.task( 'watch__common', function() {
     gulp.watch('common.scss', all);
 });
 
+gulp.task( 'watch__outside', function() {
+    gulp.watch('media-xs-c-outside.scss', all);
+});
 
 var all = [ 'CSS1', 'CSS2', 'CSS3', 'CSS4', 'CSS5', 'CSS6', 'CSS7', 'CSS8', 'CSS9', 'CSS10' ];
-var allW = [ 'CSS1', 'CSS2', 'CSS3', 'CSS4', 'CSS5', 'CSS6', 'CSS7', 'CSS8', 'CSS9', 'CSS10', 'watch__common' ];
+var allW = [ 'CSS1', 'CSS2', 'CSS3', 'CSS4', 'CSS5', 'CSS6', 'CSS7', 'CSS8', 'CSS9', 'CSS10', 'watch__common', 'watch__outside' ];
 
 gulp.task( 'default', allW );
 

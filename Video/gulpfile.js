@@ -154,8 +154,9 @@ gulp.task( 'watch__common', function() {
 
 
 var all = [ 'CSS1', 'CSS2', 'CSS3', 'CSS4', 'CSS5', 'CSS6', 'CSS7', 'CSS8', 'CSS9', 'CSS10' ];
+var allW = [ 'CSS1', 'CSS2', 'CSS3', 'CSS4', 'CSS5', 'CSS6', 'CSS7', 'CSS8', 'CSS9', 'CSS10', 'watch__common' ];
 
-gulp.task( 'default', [ all, 'watch__common'] );
+gulp.task( 'default', allW );
 
 
 

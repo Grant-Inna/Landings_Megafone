@@ -19,7 +19,7 @@ $color-button: rgb(255, 255, 255);
 $width-button: 95%;
 $height-button: 30%;
 $margin-bottom-button: 0;
-$margin-top-button: 60px;
+$margin-top-button: 70px;
 $border-r-button: 40px;
 $font-size-button: 2.4rem;
 $font-width-button: 600;
@@ -381,7 +381,7 @@ $height-header-right: 100%;
     }
     .loupe { margin-bottom: 0 }
     .top-menu-holder { display: none }
-    .main { justify-content: center; background: transparent; height: 100px; margin-bottom: 0; margin-top: 35px; }
+    .main { justify-content: center; background: transparent; height: 160px; margin-bottom: 0; margin-top: 35px; }
     .button__wrapper { justify-content: flex-start; margin-top: 3%;}
     .video-middle, .video-pre-bottom, .video-top { display: none }
     .video-bottom, .video-middle { display: block; top: 40px; height: 90% }

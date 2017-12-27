@@ -148,10 +148,15 @@ gulp.task('CSS10', function() {
         .pipe(notify('CSS10 Success!'));
 });
 
+gulp.task( 'watch__common', function() {
+    gulp.watch('common.scss', all);
+});
+
 
 var all = [ 'CSS1', 'CSS2', 'CSS3', 'CSS4', 'CSS5', 'CSS6', 'CSS7', 'CSS8', 'CSS9', 'CSS10' ];
+var allW = [ 'CSS1', 'CSS2', 'CSS3', 'CSS4', 'CSS5', 'CSS6', 'CSS7', 'CSS8', 'CSS9', 'CSS10', 'watch__common' ];
 
-gulp.task( 'default', all);
+gulp.task( 'default', allW );
 
 
 

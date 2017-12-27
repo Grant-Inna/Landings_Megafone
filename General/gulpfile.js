@@ -11,6 +11,8 @@ const gulp = require('gulp'),
 
 
 
+
+
 gulp.task('CSS1', function() {
     return gulp.src( '01/dev/style.scss' )
         .pipe(sourcemaps.init())
@@ -77,10 +79,84 @@ gulp.task('CSS5', function() {
 
 
 
+gulp.task('CSS6', function() {
+    return gulp.src( '06/dev/style.scss' )
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
+        .pipe(groupMedia())
+        .pipe(cleanCSS())
+        .pipe(rename( {suffix: '.min'} ))
+        .pipe(sourcemaps.write('dev/'))
+        .pipe(gulp.dest( '06/' ))
+        .pipe(notify('CSS6 Success!'));
+});
 
-var all = [ 'CSS1', 'CSS2', 'CSS3', 'CSS4', 'CSS5' ];
 
-gulp.task( 'default', all);
+gulp.task('CSS7', function() {
+    return gulp.src( '07/dev/style.scss' )
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
+        .pipe(groupMedia())
+        .pipe(cleanCSS())
+        .pipe(rename( {suffix: '.min'} ))
+        .pipe(sourcemaps.write('dev/'))
+        .pipe(gulp.dest( '07/' ))
+        .pipe(notify('CSS7 Success!'));
+});
+
+
+gulp.task('CSS8', function() {
+    return gulp.src( '08/dev/style.scss' )
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
+        .pipe(groupMedia())
+        .pipe(cleanCSS())
+        .pipe(rename( {suffix: '.min'} ))
+        .pipe(sourcemaps.write('dev/'))
+        .pipe(gulp.dest( '08/' ))
+        .pipe(notify('CSS8 Success!'));
+});
+
+
+gulp.task('CSS9', function() {
+    return gulp.src( '09/dev/style.scss' )
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
+        .pipe(groupMedia())
+        .pipe(cleanCSS())
+        .pipe(rename( {suffix: '.min'} ))
+        .pipe(sourcemaps.write('dev/'))
+        .pipe(gulp.dest( '09/' ))
+        .pipe(notify('CSS9 Success!'));
+});
+
+
+gulp.task('CSS10', function() {
+    return gulp.src( '10/dev/style.scss' )
+        .pipe(sourcemaps.init())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({browsers: ['last 5 versions', '> 2%']}))
+        .pipe(groupMedia())
+        .pipe(cleanCSS())
+        .pipe(rename( {suffix: '.min'} ))
+        .pipe(sourcemaps.write('dev/'))
+        .pipe(gulp.dest( '10/' ))
+        .pipe(notify('CSS10 Success!'));
+});
+
+gulp.task( 'watch__common', function() {
+    gulp.watch('common.scss', all);
+});
+
+
+var all = [ 'CSS1', 'CSS2', 'CSS3', 'CSS4', 'CSS5', 'CSS6', 'CSS7', 'CSS8', 'CSS9', 'CSS10' ];
+var allW = [ 'CSS1', 'CSS2', 'CSS3', 'CSS4', 'CSS5', 'CSS6', 'CSS7', 'CSS8', 'CSS9', 'CSS10', 'watch__common' ];
+
+gulp.task( 'default', allW );
 
 
 

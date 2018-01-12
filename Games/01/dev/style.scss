@@ -34,7 +34,7 @@ $back-footer: rgba(41, 32, 32, .98);
 $color-footer: rgb(154, 140, 140);
 
 $back-cancel: rgba(41, 32, 32, .96);
-$color-cancel: rgb(154, 140, 140);
+$color-cancel: rgb(209, 190, 190);
 
 
 $back-text: transparent; /*url('back-text.png') center no-repeat;*/
@@ -1159,6 +1159,5 @@ and (-webkit-min-device-pixel-ratio : 2) {
     .video-top { display: block; height: 240px; top: 100px; width: 60%; left: 20% }
 }
 
-@media (orientation: landscape) and (min-width: 760px) {
 
-}
+@import "../../media";

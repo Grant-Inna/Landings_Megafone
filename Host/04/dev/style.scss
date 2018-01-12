@@ -569,16 +569,7 @@ and (-webkit-min-device-pixel-ratio : 2) {
 
 @import "../../media-xs-c-outside";
 
-@media screen and (min-width: 300px) and (max-height: 500px) and ( orientation: portrait ) {
-    .main {
-        top: 105px;
-    }
-}
 
-@media screen and (min-width: 300px) and (max-height: 500px) and ( orientation: portrait ) {
-    .button__cancel {
-        top: 340px; }
-}
 
 @media only screen and (min-width : 719px) and ( min-height : 719px ) and ( orientation: landscape ) {
     .main { height: 440px !important;}

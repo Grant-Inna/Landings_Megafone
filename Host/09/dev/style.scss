@@ -37,7 +37,7 @@ $padding-top-main: 0;
 $back-footer: rgba(223, 223, 223, .8);
 $color-footer: rgb(54, 54, 54);
 
-$back-cancel: rgb(223, 223, 223);
+$back-cancel: rgb(252, 225, 248);
 $color-cancel: rgb(36, 36, 36);
 
 
@@ -564,12 +564,6 @@ and (-webkit-min-device-pixel-ratio : 2) {
     }
 }
 
-
-@media screen and (min-width: 300px) and (max-height: 500px) and ( orientation: portrait ) {
-    .main {
-        top: 165px !important;
-    }
-}
 @media screen and ( min-width: 600px ) and ( min-height: 600px ) {
     .video-top { display: block; height: 225px !important; }
 }

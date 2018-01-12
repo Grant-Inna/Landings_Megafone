@@ -574,13 +574,25 @@ a {
 .button__submit {
   max-width: 400px !important;
   max-height: 95px !important;
-  min-height: 50px !important;
+  min-height: 70px !important;
   transition: .05s ease-in-out !important;
+  justify-content: center !important;
 }
+
+
 .button__cancel { margin-top: 13px; }
 
-.footer { padding: 3px 4px 5px; }
+.button__icon { min-width: 30px; margin-left: 15px; }
+
+.footer {
+  padding: 3px 4px 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0; right: 0;
+}
 
 .headInfo__text { padding: 2px }
 
 .headInfo__text, .footer__inner, .info__text { transform: none !important; }
+
+

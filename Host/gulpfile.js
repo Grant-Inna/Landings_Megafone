@@ -149,14 +149,21 @@ gulp.task('CSS10', function() {
 });
 
 gulp.task( 'watch__common', function() {
-    gulp.watch('common.scss', all);
+    gulp.watch([ 'media.scss', 'media-xs-c-outside.scss' ], all);
 });
 
 
-var all = [ 'CSS1', 'CSS2', 'CSS3', 'CSS4', 'CSS5', 'CSS6', 'CSS7', 'CSS8', 'CSS9', 'CSS10' ];
-var allW = [ 'CSS1', 'CSS2', 'CSS3', 'CSS4', 'CSS5', 'CSS6', 'CSS7', 'CSS8', 'CSS9', 'CSS10', 'watch__common' ];
+gulp.task( 'watch__all', function() {
+    gulp.watch([ 'media.scss', 'media-xs-c-outside.scss', allSRC ], all);
+});
 
-gulp.task( 'default', allW );
+var all = [ 'CSS1', 'CSS2', 'CSS3', 'CSS4', 'CSS5', 'CSS6', 'CSS7', 'CSS8', 'CSS9', 'CSS10' ];
+var allSRC = './**/dev/style.scss';
+var allW = [ 'CSS1', 'CSS2', 'CSS3', 'CSS4', 'CSS5', 'CSS6', 'CSS7', 'CSS8', 'CSS9', 'CSS10', 'watch__common' ];
+var allSrcTask = [ 'CSS1', 'CSS2', 'CSS3', 'CSS4', 'CSS5', 'CSS6', 'CSS7', 'CSS8', 'CSS9', 'CSS10', 'watch__common', 'watch__all' ];
+
+gulp.task( 'default1', allW );
+gulp.task( 'default', allSrcTask );
 
 
 

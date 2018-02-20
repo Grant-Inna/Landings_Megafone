@@ -14,3 +14,21 @@ Testing repo for plenty of landings
 [**Music**](https://grant-inna.github.io/Landings_Megafone/Music) 
 
 [**General**](https://grant-inna.github.io/Landings_Megafone/General) 
+
+
+__*Second wave*__
+
+[**Dating**](https://grant-inna.github.io/Landings_Megafone/New/Dating) 
+
+
+
+___
+### Technologies
+
+* Jade
+* Less
+* Gulp
+* Smart-grid
+* A little bit of photoshop
+* A little bit of brain
+

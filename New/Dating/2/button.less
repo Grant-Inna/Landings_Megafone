@@ -1,0 +1,45 @@
+
+/* button */
+@back-button-container-image: rgb(197, 226, 61);
+@back-button-container-position: center;
+@back-button-container: @back-button-container-image @back-button-container-position no-repeat;
+@back-size-button-container: 100% 100%;
+@color-button-container: #000;
+
+@border-size-button-container: 4px;
+@border-color-button-container: rgb(153, 177, 41);
+@border-button-container: @border-size-button-container solid @border-color-button-container;
+@border-r-button-container: 13px;
+@box-shadow-button-container: none;
+
+.button__buy {
+  background: @back-button-container-image;
+  background-size: @back-size-button-container;
+
+  color: @color-button-container;
+
+  border-bottom: @border-button-container;
+  border-radius: @border-r-button-container;
+
+  box-shadow: @box-shadow-button-container;
+
+}
+
+
+@back-button-icon-image: url('button-icon.png');
+@back-button-icon: @back-button-icon-image center no-repeat;
+
+.button__icon {
+  background: @back-button-icon;
+  background-size: contain;
+
+  width: 4rem;
+  height: 4rem;
+  margin-left: 15px;
+
+  .xs-block({
+    width: 3rem;
+    height: 3rem;
+    margin-left: 10px;
+  })
+}

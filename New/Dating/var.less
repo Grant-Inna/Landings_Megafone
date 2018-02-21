@@ -348,9 +348,20 @@
   }
 }
 
+.from(@min_width, @name, @value){
+  @media screen and (min-width: @min_width){
+    @{name}: @value;
+  }
+}
+
 .to(@max_width, @content){
   @media screen and (max-width: @max_width){
     @content();
+  }
+}
+.to(@max_width, @name, @value){
+  @media screen and (max-width: @max_width){
+    @{name}: @value;
   }
 }
 
@@ -386,6 +397,13 @@
     @{name}: @value;
   }
 }
+
+.landscape-min-h(@height, @content ){
+  @media screen and (min-height: @height) and (orientation: landscape){
+    @content();
+  }
+}
+
 .landscape-block(@content){
   @media screen and (orientation: landscape){
     @content();
@@ -407,6 +425,14 @@
     @{name}: @value;
   }
 }
+
+
+.portrait-min-h(@height, @content ){
+  @media screen and (min-height: @height) and (orientation: portrait){
+    @content();
+  }
+}
+
 .portrait-block(@content){
   @media screen and (orientation: portrait){
     @content();

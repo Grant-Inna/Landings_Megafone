@@ -16,7 +16,7 @@ const gulp = require('gulp'),
 var StyleTasks = [ 'CSS-1', 'CSS-2', 'CSS-3', 'CSS-4', 'CSS-5', 'CSS-6', 'CSS-7', 'CSS-8' ];
 
 gulp.task('CSS-1', function() {
-    return gulp.src( '1/src/style.less' )
+    return gulp.src( '1/style.less' )
         .pipe( less())
         .pipe( groupMedia())
         .pipe( autoprefixer({browsers: ['last 5 versions', '> 2%']}))
@@ -27,7 +27,7 @@ gulp.task('CSS-1', function() {
 });
 
 gulp.task('CSS-2', function() {
-    return gulp.src( '2/src/style.less' )
+    return gulp.src( '2/style.less' )
         .pipe( less())
         .pipe( groupMedia())
         .pipe( autoprefixer({browsers: ['last 5 versions', '> 2%']}))
@@ -38,7 +38,7 @@ gulp.task('CSS-2', function() {
 })
 
 ;gulp.task('CSS-3', function() {
-    return gulp.src( '3/src/style.less' )
+    return gulp.src( '3/style.less' )
         .pipe( less())
         .pipe( groupMedia())
         .pipe( autoprefixer({browsers: ['last 5 versions', '> 2%']}))
@@ -49,7 +49,7 @@ gulp.task('CSS-2', function() {
 })
 
 ;gulp.task('CSS-4', function() {
-    return gulp.src( '4/src/style.less' )
+    return gulp.src( '4/style.less' )
         .pipe( less())
         .pipe( groupMedia())
         .pipe( autoprefixer({browsers: ['last 5 versions', '> 2%']}))
@@ -60,7 +60,7 @@ gulp.task('CSS-2', function() {
 });
 
 gulp.task('CSS-5', function() {
-    return gulp.src( '5/src/style.less' )
+    return gulp.src( '5/style.less' )
         .pipe( less())
         .pipe( groupMedia())
         .pipe( autoprefixer({browsers: ['last 5 versions', '> 2%']}))
@@ -71,7 +71,7 @@ gulp.task('CSS-5', function() {
 });
 
 gulp.task('CSS-6', function() {
-    return gulp.src( '6/src/style.less' )
+    return gulp.src( '6/style.less' )
         .pipe( less())
         .pipe( groupMedia())
         .pipe( autoprefixer({browsers: ['last 5 versions', '> 2%']}))
@@ -83,7 +83,7 @@ gulp.task('CSS-6', function() {
 
 
 gulp.task('CSS-7', function() {
-    return gulp.src( '7/src/style.less' )
+    return gulp.src( '7/style.less' )
         .pipe( less())
         .pipe( groupMedia())
         .pipe( autoprefixer({browsers: ['last 5 versions', '> 2%']}))
@@ -95,7 +95,7 @@ gulp.task('CSS-7', function() {
 
 
 gulp.task('CSS-8', function() {
-    return gulp.src( '8/src/style.less' )
+    return gulp.src( '8/style.less' )
         .pipe( less())
         .pipe( groupMedia())
         .pipe( autoprefixer({browsers: ['last 5 versions', '> 2%']}))

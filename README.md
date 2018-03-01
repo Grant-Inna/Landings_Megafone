@@ -24,7 +24,13 @@ __*Second wave*__
 
 [**Recipes**](https://grant-inna.github.io/Landings_Megafone/New/Recipes) 
 
+[**Sport**](https://grant-inna.github.io/Landings_Megafone/New/Sport) 
 
+[**Weather**](https://grant-inna.github.io/Landings_Megafone/New/Weather) 
+
+[**Home-work solutions**](https://grant-inna.github.io/Landings_Megafone/New/HWSolutions)
+
+[**Dream Interpreter**](https://grant-inna.github.io/Landings_Megafone/New/DInterpreter)
 
 
 ___

@@ -1,0 +1,20 @@
+mixin index( buttonText, icon )
+    .wrapper
+        .header__container
+            .header
+                .header__logo
+                .header__elements
+            .header__info Нажатием на кнопку "#{ buttonText }" Вы подтверждаете свое согласие с подключением подписки SUBNAME и&nbsp;
+                a( href="http://podpiski.megafon.ru/col/mds4/web/jsp/files/oferta.pdf" ) условиями предоставления подписки
+                | .&nbsp;Стоимость подписки SUBPRICE. ACCOUNT. Услуга предоставляется Контент-провайдером PROVIDER.
+        .wrapper__form
+            a( href="#<TARIF_YES_URL>" ).button__buy
+                case icon
+                    when 'icon'
+                        span.button__text #{ buttonText }
+                        span.button__icon
+                    when 'no-icon'
+                        span #{ buttonText }
+            a( href="#<TARIF_NO_URL>" ).button__cancel Отмена
+        include footer
+

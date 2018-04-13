@@ -329,6 +329,23 @@
     @content();
   }
 }
+.to-h(@max_height, @content){
+  @media screen and (max-height: @max_height) {
+    @content();
+  }
+}
+.to-w-h( @min-width, @max-width, @max_height, @content){
+  @media screen and (max-height: @max_height) and (max-width: @max-width) and (min-width: @min-width ) {
+    @content();
+  }
+}
+
+.to-w-h( @min-width, @max-width, @max_height, @o, @content){
+  @media screen and (max-height: @max_height) and (max-width: @max-width) and (min-width: @min-width ) and (orientation: @o) {
+    @content();
+  }
+}
+
 .to(@max_width, @name, @value){
   @media screen and (max-width: @max_width){
     @{name}: @value;
@@ -340,7 +357,23 @@
     @content();
   }
 }
+.from-to(@min_width, @max_width, @o, @content){
+  @media screen and (min-width: @min_width) and (max-width: @max_width) and (orientation: @o){
+    @content();
+  }
+}
 
+.from-to(@min_width, @max_width, @min_height, @max_height, @content){
+  @media screen and (min-width: @min_width) and (max-width: @max_width) and (min-height: @min_height) and (max-height: @max_height){
+    @content();
+  }
+}
+
+.from-to-all(@min_width, @max_width, @min_height, @max_height, @o, @content){
+  @media screen and (min-width: @min_width) and (max-width: @max_width) and (min-height: @min_height) and (max-height: @max_height) and (orientation: @o){
+    @content();
+  }
+}
 
 .from-o(@o, @min_width, @content){
   @media screen and (min-width: @min_width) and (orientation: @o){
@@ -356,6 +389,12 @@
 
 .from-to-o(@o, @min_width, @max_width, @content){
   @media screen and (min-width: @min_width) and (max-width: @max_width) and (orientation: @o){
+    @content();
+  }
+}
+
+.from-to-h-o(@o, @min_height, @max_height, @content){
+  @media screen and (min-height: @min_height) and (max-height: @max_height) and (orientation: @o){
     @content();
   }
 }

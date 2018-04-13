@@ -1,27 +1,46 @@
-@back-body-color: rgb(255, 255, 255);
-@back-body-image: url('full.jpg'); //url('middle.jpg')
-@back-body-position: bottom;
+@back-body-color: rgb(238, 234, 223);
+@back-body-image: url('full.png'); //url('middle.png')
+@back-body-position: top;
 @back-body: @back-body-image @back-body-position no-repeat;
-@back-size-body: 100% auto;
-.wrapper {
+@back-size-body: cover;
+
+.wrapper__form {
   background: @back-body-color @back-body;
-  //background-position: @back-body-position;
+  background-position: @back-body-position;
   background-size: @back-size-body;
 
-  .to( @xxs, { background-image: url('small.jpg'); background-position: center });
-  .landscape-block({
-    background-position: center 75%;
-    background-size: 100% auto
+  .to-h( 400px,
+  {
+    background: url('small.jpg') center no-repeat;
+    background-size: cover;
   });
-  .landscape-min-h( 450px, { background-position: center 30% });
-  .landscape-min-h( 670px, { background-position: center 20%});
-  .portrait-min-h( 455px, { background-image: url('middle.jpg'); background-position: center 45% });
-  .portrait-min-h( 555px, { background-image: url('middle.jpg'); background-position: center 30% });
-  .portrait-min-h( 700px, { background-image: url('middle.jpg'); background-position: center 40%; background-size: 100% auto });
+  .to-h-o( 420px, @l,
+  {
+    background: url('small.jpg') center no-repeat;
+    background-size: cover;
+  });
+  .from-to-all( 315px, 560px, 440px, 560px, @p,
+  {
+    background: url('middle.png') center no-repeat;
+    background-size: cover;
+  });
+
+  .to-w-h( 370px, 400px, 815px, @p, // iPhone X
+  {
+    background-size: 110% auto
+  });
+
+  .from-to-h-o( @l, 421px, 899px,
+  {
+    background: url('middle.png') top no-repeat;
+    background-size: cover;
+  });
 }
 
+
+
 /* header */
-@back-header-image: rgb(246, 247, 248);
+@back-header-image: rgb(238, 234, 223);
 @back-header-position: center;
 @back-header: @back-header-image @back-header-position no-repeat;
 @back-size-header: 100% 100%;
@@ -44,7 +63,7 @@
 @back-size-header-logo: contain;
 
 @width-header-logo: 60%;
-@height-header-logo: 65%;
+@height-header-logo: 50%;
 
 @margin-header-logo: 4%;
 
@@ -79,8 +98,8 @@
 }
 
 
-@back-header-info-image:  rgb(246, 247, 248);// @back-body-color;
-@color-header-info: rgb(97, 97, 97);
+@back-header-info-image: @back-header-image;
+@color-header-info: rgb(116, 107, 96);
 @back-header-info-position: center;
 @back-header-info: @back-header-info-image @back-header-info-position no-repeat;
 @back-size-header-info: 100% 100%;

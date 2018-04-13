@@ -346,6 +346,12 @@
   }
 }
 
+.to-w-h( @min-width, @max-width, @max_height, @min_height, @o, @content){
+  @media screen and (max-height: @max_height) and (min-height: @min_height) and (max-width: @max-width) and (min-width: @min-width ) and (orientation: @o) {
+    @content();
+  }
+}
+
 .to(@max_width, @name, @value){
   @media screen and (max-width: @max_width){
     @{name}: @value;

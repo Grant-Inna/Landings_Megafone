@@ -1,61 +1,42 @@
-@back-body-color: #1f2833;
+@back-body-color: #142330;
 @back-body-image: url('full.png'); //url('middle.png')
-@back-body-position: center;
+@back-body-position: top;
 @back-body: @back-body-image @back-body-position no-repeat;
-@back-size-body: 100% auto;
-.wrapper {
+@back-size-body: cover;
+
+.wrapper__form {
   background: @back-body-color @back-body;
-  //background-position: @back-body-position;
+  background-position: @back-body-position;
   background-size: @back-size-body;
 
-  .max-from-to-h-w( 400px, 400px,  //iphone 4
+  .to-h( 400px,
   {
-    background: @back-body-color url('small.jpg') center no-repeat;
+    background: url('small.jpg') center no-repeat;
+    background-size: cover;
+  });
+  .to-h-o( 420px, @l,
+  {
+    background: url('small.jpg') center no-repeat;
+    background-size: cover;
+  });
+  .from-to-all( 315px, 560px, 440px, 560px, @p,
+  {
+    background: url('middle.png') center no-repeat;
     background-size: cover;
   });
 
-  .max-from-to-h-w-o( 630px, 560px, @p,  //iphone 5, 6 и 6+
+  .to-w-h( 370px, 400px, 815px, 700px, @p, // iPhone X
   {
-    background: @back-body-color url('middle.png') center 80% no-repeat;
-    background-size: contain;
-  });
-
-  .to-h-o( 630px, @l,  //iphone 5, 6 и 6+, X
-  {
-    background: @back-body-color url('middle.png') center 80% no-repeat;
     background-size: 100% auto;
+    background-position: center 25%;
   });
 
-  .min-from-to-h-w-o( 631px, 631px, @l,
+  .from-to-h-o( @l, 421px, 899px,
   {
-  background: @back-body-color url('full.png') center -112% no-repeat;
-  background-size: 80%;
-  });
-  .min-from-to-h-w-o( 760px, 631px, @p,
-  {
-    background: @back-body-color url('middle.png') center 80% no-repeat;
-    background-size: 100%;
-  });
-
-  .min-from-to-h-w-o( 710px, 830px, @l,
-  {
-    background: @back-body-color url('middle.png') center -205% no-repeat;
-    background-size: 100%;
-  });
-
-  .min-from-to-h-w-o( 710px, 830px, @l,
-  {
-    background: @back-body-color url('middle.png') center -205% no-repeat;
-    background-size: 100%;
-  });
-
-  .min-from-to-h-w-o( 840px, 890px, @l,
-  {
-    background: @back-body-color url('full.png') center -180% no-repeat;
-    background-size: 90%;
+    background: url('middle.png') top no-repeat;
+    background-size: cover;
   });
 }
-
 /* header */
 @back-header-image: rgb(25, 35, 48);
 @back-header-position: center;

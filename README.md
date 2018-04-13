@@ -15,9 +15,6 @@ Testing repo for plenty of landings
 
 [**General**](https://grant-inna.github.io/Landings_Megafone/General) 
 
-
-__*Second wave*__
-
 [**Dating**](https://grant-inna.github.io/Landings_Megafone/New/Dating) 
 
 [**Horoscope**](https://grant-inna.github.io/Landings_Megafone/New/Horoscope) 
@@ -31,6 +28,11 @@ __*Second wave*__
 [**Home-work solutions**](https://grant-inna.github.io/Landings_Megafone/New/HWSolutions)
 
 [**Dream Interpreter**](https://grant-inna.github.io/Landings_Megafone/New/DInterpreter)
+
+
+__*Third wave*__
+
+[**Bitcoin**](https://grant-inna.github.io/Landings_Megafone/New/Bitcoin)
 
 
 ___

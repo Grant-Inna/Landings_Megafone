@@ -1,6 +1,8 @@
 # Landings_Megafone
 Testing repo for plenty of landings
 
+For mobile devices only
+
 [**Adult**](https://grant-inna.github.io/Landings_Megafone/Adult)
 
 [**Video**](https://grant-inna.github.io/Landings_Megafone/Video)
@@ -28,9 +30,6 @@ Testing repo for plenty of landings
 [**Home-work solutions**](https://grant-inna.github.io/Landings_Megafone/New/HWSolutions)
 
 [**Dream Interpreter**](https://grant-inna.github.io/Landings_Megafone/New/DInterpreter)
-
-
-__*Third wave*__
 
 [**Bitcoin**](https://grant-inna.github.io/Landings_Megafone/New/Bitcoin)
 
